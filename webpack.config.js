@@ -25,13 +25,18 @@ module.exports = {
         test: /\.(sa|sc|c)ss$/,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
-      {
-        test: /\.(png|jpg|jpeg|svg|woff|woff2|ttf)$/,
-        loader: "url-loader",
-      },
+      // {
+      //   test: /\.(png|jpg|jpeg|svg|woff|woff2|ttf)$/,
+      //   loader: "url-loader",
+      // },
       {
         test: /\.html$/i,
         loader: "html-loader",
+      },
+      {
+        test: /\.(jpg|png|jpeg)$/i,
+        exclude: /(node_modules)/,
+        loader: "file-loader",
       },
     ],
   },
