@@ -4,11 +4,11 @@ import Sidebar from "./components/sidebar/Sidebar.js";
 import "./App.scss";
 import Home from "./pages/Home.js";
 import UserList from "./pages/userlist/UserList.js";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <Router>
+    <div>
       <Topbar />
       <div className="container">
         <Sidebar />
@@ -17,7 +17,7 @@ const App = () => {
           <Route path="/user" element={<UserList />} />
         </Routes>
       </div>
-    </Router>
+    </div>
   );
 };
 

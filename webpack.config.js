@@ -5,11 +5,20 @@ module.exports = {
   mode: "development",
   output: {
     path: path.join(__dirname, "/dist"),
+    publicPath: "/",
     filename: "bundle.js",
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: "public/index.html",
+    }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: "public/_redirects",
+          to: ".",
+        },
+      ],
     }),
   ],
   module: {
