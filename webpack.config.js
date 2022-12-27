@@ -12,14 +12,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "public/index.html",
     }),
-    new CopyPlugin({
-      patterns: [
-        {
-          from: "public/_redirects",
-          to: ".",
-        },
-      ],
-    }),
   ],
   module: {
     rules: [
@@ -46,6 +38,11 @@ module.exports = {
         test: /\.(jpg|png|jpeg)$/i,
         exclude: /(node_modules)/,
         loader: "file-loader",
+      },
+      {
+        test: /\.js$/,
+        enforce: "pre",
+        use: ["source-map-loader"],
       },
     ],
   },

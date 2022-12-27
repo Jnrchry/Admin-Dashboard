@@ -14,6 +14,7 @@ import {
   Work,
   Report,
 } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -23,18 +24,24 @@ const Sidebar = () => {
           <h6 className="sidebarTitle">Dashboard</h6>
           <ul className="sidebarList">
             <li className="sidebarListItem active">
-              <LineStyle className="sidebarIcon" />
-              Home
+              <Link to="/">
+                <LineStyle className="sidebarIcon" />
+                Home
+              </Link>
             </li>
 
             <li className="sidebarListItem">
-              <Timeline className="sidebarIcon" />
-              Analytics
+              <Link to="/analytics">
+                <Timeline className="sidebarIcon" />
+                Analytics
+              </Link>
             </li>
 
             <li className="sidebarListItem">
-              <TrendingUp className="sidebarIcon" />
-              Sales
+              <Link to="/sales">
+                <TrendingUp className="sidebarIcon" />
+                Sales
+              </Link>
             </li>
           </ul>
         </div>
@@ -43,22 +50,30 @@ const Sidebar = () => {
           <h6 className="sidebarTitle">Quick Menu</h6>
           <ul className="sidebarList">
             <li className="sidebarListItem ">
-              <Person className="sidebarIcon" /> Users
+              <Link to="/users">
+                <Person className="sidebarIcon" /> Users
+              </Link>
             </li>
 
             <li className="sidebarListItem">
-              <Storefront className="sidebarIcon" />
-              Products
+              <Link to="/products">
+                <Storefront className="sidebarIcon" />
+                Products
+              </Link>
             </li>
 
             <li className="sidebarListItem">
-              <AttachMoney className="sidebarIcon" />
-              Transactions
+              <Link to="/transactions">
+                <AttachMoney className="sidebarIcon" />
+                Transactions
+              </Link>
             </li>
 
             <li className="sidebarListItem">
-              <Leaderboard className="sidebarIcon" />
-              Reports
+              <Link to="/reports">
+                <Leaderboard className="sidebarIcon" />
+                Reports
+              </Link>
             </li>
           </ul>
         </div>
@@ -67,18 +82,24 @@ const Sidebar = () => {
           <h6 className="sidebarTitle">Notifications</h6>
           <ul className="sidebarList">
             <li className="sidebarListItem">
-              <Mail className="sidebarIcon" />
-              Mail
+              <Link to="/mail">
+                <Mail className="sidebarIcon" />
+                Mail
+              </Link>
             </li>
 
             <li className="sidebarListItem">
-              <Chat className="sidebarIcon" />
-              Feedback
+              <Link to="/feedback">
+                <Chat className="sidebarIcon" />
+                Feedback
+              </Link>
             </li>
 
             <li className="sidebarListItem">
-              <Message className="sidebarIcon" />
-              Messages
+              <Link to="/messages">
+                <Message className="sidebarIcon" />
+                Messages
+              </Link>
             </li>
           </ul>
         </div>
@@ -87,18 +108,24 @@ const Sidebar = () => {
           <h6 className="sidebarTitle">Staff</h6>
           <ul className="sidebarList">
             <li className="sidebarListItem ">
-              <Work className="sidebarIcon" />
-              Manage
+              <Link to="/manage">
+                <Work className="sidebarIcon" />
+                Manage
+              </Link>
             </li>
 
             <li className="sidebarListItem">
-              <Timeline className="sidebarIcon" />
-              Analytics
+              <Link to="/analytics">
+                <Timeline className="sidebarIcon" />
+                Analytics
+              </Link>
             </li>
 
             <li className="sidebarListItem">
-              <Report className="sidebarIcon" />
-              Reports
+              <Link to="/reports">
+                <Report className="sidebarIcon" />
+                Reports
+              </Link>
             </li>
           </ul>
         </div>
