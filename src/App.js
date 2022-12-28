@@ -5,6 +5,7 @@ import "./App.scss";
 import Home from "./pages/Home.js";
 import UserList from "./pages/userlist/UserList.js";
 import { Routes, Route } from "react-router-dom";
+import User from "./pages/user/User.js";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/users" element={<UserList />} />
+          <Route path="/user/:userId" element={<User />} />
         </Routes>
       </div>
     </div>
