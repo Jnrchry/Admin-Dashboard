@@ -46,13 +46,15 @@ const NewUser = () => {
           </div>
         </div>
 
-        <div className="navUserItem">
+        <div className="newUserItem">
           <label>Active</label>
           <select name="active" className="userSelect" id="active">
             <option value="yes">Yes</option>
             <option value="no">No</option>
           </select>
         </div>
+
+        <button className="newUserButton">Create</button>
       </form>
     </div>
   );
