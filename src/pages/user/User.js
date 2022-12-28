@@ -9,13 +9,16 @@ import {
   PhoneAndroid,
   Publish,
 } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 const User = () => {
   return (
     <div className="user">
       <div className="userTitleContainer">
         <h1 className="userTitle">Edit User</h1>
-        <button className="userAddButton">Create</button>
+        <Link to="/newUser">
+          <button className="userAddButton">Create</button>
+        </Link>
       </div>
 
       <div className="userContainer">
@@ -113,12 +116,12 @@ const User = () => {
                 />
               </div>
             </div>
-            <div className="uswerUpdateRight">
+            <div className="userUpdateRight">
               <div className="userUpdateUpload">
                 <img src={Model} alt="" className="userUpdateImg" />
 
                 <label htmlFor="file">
-                  <Publish />
+                  <Publish className="userUpdateIcon" />
                 </label>
                 <input
                   type="file"
@@ -127,6 +130,8 @@ const User = () => {
                   style={{ display: "none" }}
                 />
               </div>
+
+              <button className="userUpdateButton">Update</button>
             </div>
           </form>
         </div>
