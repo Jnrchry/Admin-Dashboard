@@ -116,3 +116,68 @@ export const userRows = [
     transaction: "$120.00",
   },
 ];
+
+export const productRows = [
+  {
+    id: 1,
+    name: "Apple Airpods",
+    img: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fapple-airpod&psig=AOvVaw2KuXi3KIrzQgsibV93X_jP&ust=1672351722075000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLit4eOpnfwCFQAAAAAdAAAAABAJ",
+    stock: 123,
+    status: "active",
+    price: "$120.00",
+  },
+
+  {
+    id: 2,
+    name: "Apple Airpods",
+    img: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fapple-airpod&psig=AOvVaw2KuXi3KIrzQgsibV93X_jP&ust=1672351722075000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLit4eOpnfwCFQAAAAAdAAAAABAJ",
+    stock: 123,
+    status: "active",
+    price: "$120.00",
+  },
+
+  {
+    id: 3,
+    name: "Apple Airpods",
+    img: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fapple-airpod&psig=AOvVaw2KuXi3KIrzQgsibV93X_jP&ust=1672351722075000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLit4eOpnfwCFQAAAAAdAAAAABAJ",
+    stock: 123,
+    status: "active",
+    price: "$120.00",
+  },
+
+  {
+    id: 4,
+    name: "Apple Airpods",
+    img: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fapple-airpod&psig=AOvVaw2KuXi3KIrzQgsibV93X_jP&ust=1672351722075000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLit4eOpnfwCFQAAAAAdAAAAABAJ",
+    stock: 123,
+    status: "active",
+    price: "$120.00",
+  },
+
+  {
+    id: 5,
+    name: "Apple Airpods",
+    img: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fapple-airpod&psig=AOvVaw2KuXi3KIrzQgsibV93X_jP&ust=1672351722075000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLit4eOpnfwCFQAAAAAdAAAAABAJ",
+    stock: 123,
+    status: "active",
+    price: "$120.00",
+  },
+
+  {
+    id: 6,
+    name: "Apple Airpods",
+    img: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fapple-airpod&psig=AOvVaw2KuXi3KIrzQgsibV93X_jP&ust=1672351722075000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLit4eOpnfwCFQAAAAAdAAAAABAJ",
+    stock: 123,
+    status: "active",
+    price: "$120.00",
+  },
+
+  {
+    id: 7,
+    name: "Apple Airpods",
+    img: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fapple-airpod&psig=AOvVaw2KuXi3KIrzQgsibV93X_jP&ust=1672351722075000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLit4eOpnfwCFQAAAAAdAAAAABAJ",
+    stock: 123,
+    status: "active",
+    price: "$120.00",
+  },
+];
