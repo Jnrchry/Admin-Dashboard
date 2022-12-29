@@ -3,6 +3,7 @@ import "./product.scss";
 import { Link } from "react-router-dom";
 import Chart from "../../components/chart/Chart";
 import { productData } from "../../components/data";
+import { Publish } from "@mui/icons-material";
 
 const Product = () => {
   return (
@@ -51,7 +52,47 @@ const Product = () => {
           </div>
         </div>
       </div>
-      <div className="productBottom"></div>
+      <div className="productBottom">
+        <form action="" className="productForm">
+          <div className="productFormLeft">
+            <label htmlFor="">Product Name</label>
+            <input type="text" name="" placeholder="Apple Airpod" />
+
+            <label htmlFor="">Instock</label>
+            <select name="inStock" id="inStock">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+
+            <label htmlFor="">Active</label>
+            <select name="active" id="active">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+
+          <div className="productFormRight">
+            <div className="productUpload">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcZTpB9OAPdZDD4meEdWRLaDGd9r0NAB5kWg&usqp=CAU"
+                alt=""
+                className="productUploadImg"
+              />
+              <label htmlFor="file">
+                <Publish />
+              </label>
+              <input
+                type="file"
+                name=""
+                id="file"
+                style={{ display: "none" }}
+              />
+            </div>
+
+            <button className="productButton">Update</button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
