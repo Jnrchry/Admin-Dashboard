@@ -9,6 +9,7 @@ import User from "./pages/user/User.js";
 import NewUser from "./pages/newuser/NewUser.js";
 import ProductList from "./pages/productList/ProductList.js";
 import Product from "./pages/product/Product.js";
+import NewProduct from "./pages/newProduct/NewProduct.js";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/newuser" element={<NewUser />} />
           <Route path="/products" element={<ProductList />} />
           <Route path="/product/:productId" element={<Product />} />
+          <Route path="/newproduct" element={<NewProduct />} />
         </Routes>
       </div>
     </div>
