@@ -20,7 +20,7 @@ const ProductList = () => {
       width: 200,
       renderCell: (params) => {
         return (
-          <div className="productListUser">
+          <div className="productListItem">
             <img src={params.row.img} alt="" className="productListImg" />
             {params.row.name}
           </div>
